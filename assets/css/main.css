@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -12,10 +13,12 @@
   display: inline;
   color: #222;
 }
+
 .rocks {
   display: inline;
   color: #8d0707;
 }
+
 a {
   text-decoration: none;
 }
@@ -35,21 +38,25 @@ nav {
 }
 
 .navigation-bar ul li {
-  display: inline-block;
+  display: inline;
   margin: 0 25px;
 }
+
 .navigation-bar ul li:last-child {
   margin-right: 0px;
 }
+
 .navigation-bar ul li a {
   font-size: 14px;
   color: #222222;
   font-weight: normal;
   text-transform: capitalize;
 }
+
 .navigation-bar ul li a:hover {
   color: #ffa1a1;
 }
+
 .navigation-bar ul li a.btn {
   display: inline-block;
   padding: 10px 28px;
@@ -59,6 +66,7 @@ nav {
   font-weight: 600;
   color: rgb(109, 29, 29);
 }
+
 .navigation-bar ul li a.btn:hover {
   background-color: rgb(109, 29, 29);
   color: #ffa1a1;
@@ -66,15 +74,16 @@ nav {
 
 .menuBtn {
   cursor: pointer;
+  position: absolute;
+  right: 20px;
   display: none;
 }
 
 @media (max-width: 990px) {
   .menuBtn {
     display: block;
-    position: absolute;
-    right: 20px;
   }
+
   .navigation-bar {
     display: none;
     position: absolute;
@@ -91,10 +100,12 @@ nav {
     display: block;
     margin: 15px 0;
   }
+
   .navigation-bar ul li a.btn {
     background-color: rgb(109, 29, 29);
     color: #ffa1a1;
   }
+
   .navigation-bar ul li a:hover {
     color: rgb(109, 29, 29);
   }
@@ -105,12 +116,15 @@ nav {
   height: 100%;
   min-height: 100vh;
 }
+
 .home-wrapper {
   height: 100%;
 }
+
 .col-left {
   width: 50%;
 }
+
 .home-image {
   width: 50%;
   text-align: right;
@@ -123,6 +137,7 @@ nav {
   color: #222;
   margin-bottom: 20px;
 }
+
 .col-left p {
   font-weight: normal;
   font-size: 15px;
@@ -138,10 +153,12 @@ nav {
   color: #636363;
   margin-bottom: 20px;
 }
+
 .col-left ul li img {
   vertical-align: middle;
   margin-right: 15px;
 }
+
 .btn-section {
   justify-content: flex-start;
   margin-top: 40px;
@@ -158,6 +175,7 @@ nav {
   box-shadow: 0px 4px 15px rgba(0, 200, 148, 0.15);
   border-radius: 3px;
 }
+
 .btn-play {
   display: flex;
 
@@ -166,9 +184,11 @@ nav {
   color: #222;
   font-size: 16px;
 }
+
 .btn-play span {
   margin-right: 18px;
 }
+
 .curve-image {
   position: absolute;
 
@@ -184,14 +204,17 @@ nav {
   top: 20%;
   left: 50%;
 }
+
 .shape3 {
   top: 45%;
   left: 40%;
 }
+
 .shape4 {
   top: 78%;
   left: 25%;
 }
+
 .shape5 {
   top: 70%;
   left: 55%;
@@ -201,39 +224,49 @@ nav {
   .container {
     padding: 0 20px;
   }
+
   .home-wrapper {
     flex-direction: column-reverse;
   }
+
   .home .col-left {
     width: 100%;
     padding: 30px 0 150px;
   }
+
   .col-left h1 {
     font-size: 35px;
     margin-bottom: 15px;
   }
+
   .home-image {
     width: auto;
     text-align: center;
   }
+
   .home-image img {
     width: 70%;
   }
+
   .shape {
     display: none;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .container {
     padding: 0 35px;
   }
+
   .shape {
     display: none;
   }
+
   .home-image img {
     width: 83%;
   }
 }
+
 .show {
   display: block;
 }
